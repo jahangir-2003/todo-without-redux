@@ -43,7 +43,6 @@ const App = () => {
 
   const handleDelete = (id: number) => {
     setData(data.filter((item: todotype) => item.id !== id))
-
   }
 
   const handleEdit = (id: number) => {
