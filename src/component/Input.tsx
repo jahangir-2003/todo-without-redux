@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Input = ({ name, value, onChange }) => {
+const Input = ({ name, value, onChange, placeholder, className }: { name: string, value: string, onChange: any, placeholder: string, className?: string }) => {
   return (
     <div className="w-full mx-auto">
       <label htmlFor="simple-input" className="sr-only">Enter a to-do</label>
@@ -10,8 +10,8 @@ const Input = ({ name, value, onChange }) => {
         value={value}
         name={name}
         onChange={onChange}
-        placeholder="Enter a to-do item"
-        className={`w-full h-10  p-2 rounded-l-md mx-auto focus:outline-none`}
+        placeholder={placeholder}
+        className={`w-full h-10  p-2 rounded-md mx-auto focus:outline-none ${className}`}
       />
     </div>
   )
